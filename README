@@ -1,0 +1,20 @@
+####################################################
+#                                    ETSII - ULL   #
+#                                                  #
+#        Práctica de Laboratorio #6                #
+#      Autor: Andrés Nacimiento García             #
+#                                                  #
+#                           24 de Octubre de 2012  #
+####################################################
+
+PARA EJECUTAR LAS PRUEBAS RSPECT:
+Comando: rspec -Ilib spec/ppt_spec.rb (en el directorio raiz)
+
+PARA EJECUTAR LAS PRUEBAS:
+Comando: rake -T (en el directorio raíz) - Muestra la descripción de las tareas
+	
+	rake bin    # Run bin/ppt_main.rb
+	rake rspec  # (default) Run tests with --format documentation
+	rake test   # Run tests with --format documentation
+	rake thtml  # Run tests with format: html
+
