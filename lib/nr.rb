@@ -29,8 +29,8 @@ class NumerosRacionales
 		puts numeroracional
 	end
 
-	def comprobarfracciones
-		if ((3.5/2.5) == (3.5/2.5))
+	def ==(a,b,c,d)
+		if ((a/b) == (c/d))
 			return "Son iguales"
 		else
 			return "Son distintas"
@@ -46,12 +46,59 @@ class NumerosRacionales
 	end
 
 	def -(a,b)
-		return @denominador
+		return "#{b}/#{a}" 
 	end
 
+	def +(a,b,c,d)
+		return (a/b)+(c/d)
+	end
 
-	def opuesto
-		return denominador-numerador
+	#def -(x,y,z,w)
+	#	return (x/y)-(z/w)
+	#end
+
+	def *(a,b,c,d)
+		return (a/b)*(c/d)
+	end
+
+	def /(a,b,c,d)
+		return (a/b)/(c/d)
+	end
+
+	def %(a,b,c,d)
+		return (a/b)%(c/d)
+	end
+
+	def <(a,b,c,d)
+		if (a/b)<(c/d)
+			return "true"
+		else
+			return "false"
+		end
+	end
+
+	def >(a,b,c,d)
+		if (a/b)>(c/d)
+			return "true"
+		else
+			return "false"
+		end
+	end
+
+	def <=(a,b,c,d)
+		if (a/b)<(c/d)
+			return "true"
+		else
+			return "false"
+		end
+	end
+
+	def >=(a,b,c,d)
+		if (a/b)>(c/d)
+			return "true"
+		else
+			return "false"
+		end
 	end
 
 end	
